@@ -1,56 +1,229 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moussa Ndoye - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diaraf Diouf | Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
-<body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#projects">Projets</a>
-        <a href="#about">À propos</a>
-        <a href="#contact">Contact</a>
-        <a href="#linkfour">Link Four</a>
-    </nav>
+<body class="bg-[#0b0b0b] text-white font-sans">
 
-    <!-- Hero -->
-    <header>
-        <h1>Hi, I am Moussa Ndoye</h1>
-        <p>Un développeur front-end basé à Dakar, passionné par la création de sites web accessibles et conviviaux.</p>
-        <a href="#contact" class="btn">Contactez-moi</a>
-        <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
-    </header>
+<!-- ===== NAVBAR ===== -->
+<nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+  <h1 class="font-bold tracking-wide">DIARAF DIOUF</h1>
+  <div class="space-x-6 text-sm text-gray-300">
+    <a href="#projects" class="hover:text-white">Projets</a>
+    <a href="#skills" class="hover:text-white">Compétences</a>
+    <a href="#frameworks" class="hover:text-white">Frameworks</a>
+    <a href="#tools" class="hover:text-white">Outils</a>
+    <a href="#contact" class="hover:text-white">Contact</a>
+  </div>
+</nav>
 
-    <!-- Projets -->
-    <section id="projects">
-        <h2>Projets mis en avant</h2>
-        <p>Voici une sélection de projets qui illustrent ma passion pour le développement front-end.</p>
-        <div class="projects">
-            <div class="project-card">
-                <h3>Page de destination pour notre émission préférée</h3>
-                <p>Design responsive et fonction d’abonnement newsletter pour Adventure Time.</p>
-                <div class="project-info">Année: 2023 | Client: Conceptual Project | Role: Développeur Front-end</div>
-                <a href="#" class="btn">Démo</a> <a href="#" class="btn">Github</a>
-            </div>
-            <div class="project-card">
-                <h3>Blog pour l’actualité mondiale</h3>
-                <p>Création d’une page d’accueil innovante avec CSS Grid pour une expérience utilisateur fluide.</p>
-                <div class="project-info">Année: 2022 | Client: web news | Role: Développeur Front-end</div>
-                <a href="#" class="btn">Démo</a>
-            </div>
-            <div class="project-card">
-                <h3>Page produit pour site e-commerce</h3>
-                <p>Page produit avec galerie lightbox dynamique et panier fonctionnel fluide.</p>
-                <div class="project-info">Année: 2022 | Role: Développeur Front-end</div>
-                <a href="#" class="btn">Démo</a> <a href="#" class="btn">Github</a>
-            </div>
+<!-- ==== HERO ==== -->
+<header class="py-20">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+    <div class="md:w-1/2 border-l-4 border-blue-500 pl-6 space-y-6">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+        HI, I AM <br/> DIARAF DIOUF.
+      </h1>
+
+      <p class="text-gray-400">
+        Développeur front-end basé à Dakar, passionné par le web,
+        le mobile et les interfaces modernes.
+      </p>
+
+      <div class="flex gap-5 items-center">
+        <a href="#contact"
+           class="bg-lime-400 hover:bg-lime-500 text-black font-semibold py-2 px-6 rounded">
+          CONTACTEZ-MOI
+        </a>
+
+        <a href="https://www.linkedin.com/mynetwork/grow/" target="_blank" class="text-gray-400 hover:text-white text-xl">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/diarafdiouf" target="_blank" class="text-gray-400 hover:text-white text-xl">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="md:w-1/2 flex justify-center">
+      <img src="photo.jpeg"
+           alt="Diaraf Diouf"
+           class="rounded-lg shadow-lg w-80"/>
+    </div>
+  </div>
+</header>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold uppercase mb-12">Projets</h2>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+
+      <!-- Projet principal -->
+      <div class="bg-[#1c1c1c] p-4 rounded-lg">
+        <img src="photo2.jpeg" alt="Projet principal" class="rounded-md">
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-2">Application Web Moderne</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Application développée avec React, Tailwind CSS et API REST.
+        </p>
+        <p class="text-sm text-gray-500">Rôle : Développeur Full Stack</p>
+        <div class="flex gap-6 text-lime-400 font-semibold text-sm mt-2">
+          <a href="#">DÉMO →</a>
+          <a href="#">GITHUB →</a>
         </div>
-    </section>
+      </div>
 
-    <!-- À propos -->
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je suis développeur front-end basé à Dakar, avec une formation en génie informatique. P
+      <!-- Photos supplémentaires -->
+      <div class="bg-[#1c1c1c] p-4 rounded-lg">
+        <img src="project image 1.png" alt="Projet 1" class="rounded-md">
+      </div>
+      <div class="bg-[#1c1c1c] p-4 rounded-lg">
+        <img src="project image.png" alt="Projet 2" class="rounded-md">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 bg-[#0f0f0f]">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold uppercase mb-12">Langages</h2>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">Java</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">Python</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">PHP</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">C</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">Dart</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">Kotlin</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">JavaScript</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">UML</div>
+    </div>
+  </div>
+</section>
+
+<!-- FRAMEWORKS -->
+<section id="frameworks" class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold uppercase mb-12">Frameworks & Niveaux</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <div>
+        <div class="flex justify-between mb-2">
+          <span>Spring Boot</span>
+          <span class="text-sm text-gray-400">Avancé</span>
+        </div>
+        <div class="bg-[#1c1c1c] h-2 rounded-full">
+          <div class="bg-lime-400 h-2 rounded-full w-[85%]"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-2">
+          <span>Laravel</span>
+          <span class="text-sm text-gray-400">Avancé</span>
+        </div>
+        <div class="bg-[#1c1c1c] h-2 rounded-full">
+          <div class="bg-lime-400 h-2 rounded-full w-[80%]"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-2">
+          <span>Flutter</span>
+          <span class="text-sm text-gray-400">Intermédiaire</span>
+        </div>
+        <div class="bg-[#1c1c1c] h-2 rounded-full">
+          <div class="bg-lime-400 h-2 rounded-full w-[65%]"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-2">
+          <span>Angular</span>
+          <span class="text-sm text-gray-400">Intermédiaire</span>
+        </div>
+        <div class="bg-[#1c1c1c] h-2 rounded-full">
+          <div class="bg-lime-400 h-2 rounded-full w-[70%]"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-2">
+          <span>React</span>
+          <span class="text-sm text-gray-400">Avancé</span>
+        </div>
+        <div class="bg-[#1c1c1c] h-2 rounded-full">
+          <div class="bg-lime-400 h-2 rounded-full w-[85%]"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="py-24 bg-[#0f0f0f]">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold uppercase mb-12">Outils</h2>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">Git</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">GitHub</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">Linux</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">VS Code</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">Android Studio</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">IntelliJ IDEA</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">MySQL</div>
+      <div class="bg-[#1c1c1c] p-6 rounded-lg text-center">UML</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold uppercase mb-4">Contact</h2>
+
+    <p class="text-gray-400 mb-6 text-sm">
+      📧 Email : <a href="mailto:diaraf1993diouf@gmail.com" class="text-lime-400">diaraf1993diouf@gmail.com</a><br/>
+      📱 Téléphone : <a href="tel:+221773509559" class="text-lime-400">+221 77 350 9559</a>
+    </p>
+
+    <form class="space-y-4 max-w-md">
+      <input type="text" placeholder="Nom complet"
+             class="w-full bg-[#1c1c1c] p-3 rounded"/>
+      <input type="email" placeholder="Email"
+             class="w-full bg-[#1c1c1c] p-3 rounded"/>
+      <textarea placeholder="Message"
+                class="w-full bg-[#1c1c1c] p-3 rounded h-32"></textarea>
+
+      <button class="bg-lime-400 hover:bg-lime-500 text-black font-semibold py-2 px-6 rounded">
+        ENVOYER
+      </button>
+    </form>
+  </div>
+</section>
+
+<!--  FOOTER -->
+<footer class="text-center py-6 text-xs text-gray-500">
+  © 2025 Diaraf Diouf. Tous droits réservés.
+</footer>
+
+</body>
+</html>
